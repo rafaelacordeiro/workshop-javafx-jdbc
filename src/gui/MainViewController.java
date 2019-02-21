@@ -67,7 +67,6 @@ public class MainViewController implements Initializable{
 			initializingAction.accept(controller);
 			
 		} catch (IOException e) {
-			System.out.println(e);
 			Alerts.showAlert("IO Exception", "Error loading page", e.getMessage(), AlertType.ERROR);
 		}
 	}
